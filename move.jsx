@@ -75,7 +75,7 @@ function movecomp()
     var inPoint=currentLayers.inPoint
     layersStartSort.push(inPoint)
   }
-  startTimesArrSort.sort(function(a,b)
+  layersStartSort.sort(function(a,b)
   {
     if( a < b ) return -1;
     if( a > b ) return 1;
