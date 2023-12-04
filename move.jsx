@@ -10,12 +10,13 @@ var dialog = (function () {
 
   var button1 = dialog.add("button", undefined, undefined, {name: "button1"}); 
       button1.text = "图层对齐"; 
-      button1.alignment = ["left","top"];
+      button1.alignment = ["center","top"];
       button1.onClick=layersAlign;
 
   var button2 = dialog.add("button", undefined, undefined, {name: "button2"}); 
-      button2.text = "图层移动";
-      button2.onClick=movecomp
+      button2.text = "图层移动"; 
+      button2.alignment = ["center","top"];
+      button1.onClick=movecomp;
 
   dialog.layout.layout(true);
   dialog.layout.resize();
