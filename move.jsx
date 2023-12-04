@@ -16,7 +16,7 @@ var dialog = (function () {
   var button2 = dialog.add("button", undefined, undefined, {name: "button2"}); 
       button2.text = "图层移动"; 
       button2.alignment = ["center","top"];
-      button1.onClick=movecomp;
+      button2.onClick=movecomp;
 
   dialog.layout.layout(true);
   dialog.layout.resize();
